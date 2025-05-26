@@ -38,7 +38,6 @@ PACKAGES="$PACKAGES luci-i18n-passwall-zh-cn"
 PACKAGES="$PACKAGES luci-app-openclash"
 PACKAGES="$PACKAGES luci-i18n-homeproxy-zh-cn"
 PACKAGES="$PACKAGES openssh-sftp-server"
-PACKAGES="$PACKAGES luci-i18n-dockerman-zh-cn"
 # 增加几个必备组件 方便用户安装iStore
 PACKAGES="$PACKAGES fdisk"
 PACKAGES="$PACKAGES script-utils"
@@ -53,6 +52,8 @@ PACKAGES="$PACKAGES luci-app-wireguard"
 PACKAGES="$PACKAGES docker"
 PACKAGES="$PACKAGES dockerd"
 PACKAGES="$PACKAGES luci-app-dockerman"
+PACKAGES="$PACKAGES luci-i18n-dockerman-zh-cn"
+
 
 # iptables 和 DNS 配置
 PACKAGES="$PACKAGES ipset"
@@ -102,6 +103,14 @@ PACKAGES="$PACKAGES kmod-mac80211"
 PACKAGES="$PACKAGES hostapd"
 PACKAGES="$PACKAGES wpa-supplicant"
 PACKAGES="$PACKAGES luci-app-wifi"
+
+#流量監控
+PACKAGES="$PACKAGES luci-app-nlbwmon"    # 网络负载带宽监控
+PACKAGES="$PACKAGES luci-app-rrdtool"    # 基于 rrdtool 的流量图表显示
+PACKAGES="$PACKAGES vnstat"              # vnStat 流量统计工具
+PACKAGES="$PACKAGES luci-app-sqm"        # 网络流量管理和 QoS
+
+
 
 
 
