@@ -58,7 +58,6 @@ PACKAGES="$PACKAGES luci-i18n-dockerman-zh-cn"
 # iptables 和 DNS 配置
 PACKAGES="$PACKAGES ipset"
 PACKAGES="$PACKAGES ip-full"
-PACKAGES="$PACKAGES iptables"
 PACKAGES="$PACKAGES iptables-mod-tproxy"
 PACKAGES="$PACKAGES iptables-mod-extra"
 PACKAGES="$PACKAGES dnsmasq-full"
@@ -90,18 +89,14 @@ PACKAGES="$PACKAGES minidlna"
 #USB
 PACKAGES="$PACKAGES kmod-usb-core"
 PACKAGES="$PACKAGES kmod-usb-ehci"
-PACKAGES="$PACKAGES kmod-usb-xhci"
 PACKAGES="$PACKAGES kmod-ath9k"   # 如果使用 Atheros 无线芯片
 PACKAGES="$PACKAGES kmod-rt2800-usb"  # 如果使用 Ralink USB 无线芯片
 PACKAGES="$PACKAGES kmod-mac80211"
 PACKAGES="$PACKAGES hostapd"
 PACKAGES="$PACKAGES wpa-supplicant"
-PACKAGES="$PACKAGES luci-app-wifi"
 
 #流量監控
 PACKAGES="$PACKAGES luci-app-nlbwmon"
-# 基于 rrdtool 的流量图表显示
-PACKAGES="$PACKAGES luci-app-rrdtool"
 # vnStat 流量统计工具
 PACKAGES="$PACKAGES vnstat"
 # 网络流量管理和 QoS
