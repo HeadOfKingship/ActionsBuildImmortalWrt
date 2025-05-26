@@ -86,9 +86,9 @@ PACKAGES="$PACKAGES luci-i18n-ja"
 # 必备的系统工具
 PACKAGES="$PACKAGES ntpd"
 PACKAGES="$PACKAGES syslog-ng"
-PACKAGES"=$PACKAGES strace"
-PACKAGES"=$PACKAGES htop"
-PACKAGES"=$PACKAGES screen"
+PACKAGES="$PACKAGES strace"
+PACKAGES="$PACKAGES htop"
+PACKAGES="$PACKAGES screen"
 
 # 流媒体和多媒体支持
 PACKAGES="$PACKAGES ffmpeg"
