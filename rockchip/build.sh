@@ -24,12 +24,12 @@ cat /home/build/immortalwrt/files/etc/config/pppoe-settings
 echo "$(date '+%Y-%m-%d %H:%M:%S') - Starting build process..."
 
 
-
 # 定义所需安装的包列表
 PACKAGES=""
 PACKAGES="$PACKAGES curl"
 PACKAGES="$PACKAGES luci-i18n-diskman-zh-cn"
 PACKAGES="$PACKAGES luci-i18n-package-manager-zh-cn"
+PACKAGES="$PACKAGES luci-i18n-firewall-zh-cn"
 PACKAGES="$PACKAGES luci-i18n-filebrowser-go-zh-cn"
 PACKAGES="$PACKAGES luci-app-argon-config"
 PACKAGES="$PACKAGES luci-i18n-argon-config-zh-cn"
@@ -76,12 +76,6 @@ PACKAGES="$PACKAGES unzip"
 PACKAGES="$PACKAGES luci-compat"
 PACKAGES="$PACKAGES luci-base"
 
-# 繁体中文支持
-PACKAGES="$PACKAGES luci-i18n-zh-tw"
-
-# 日文支持
-PACKAGES="$PACKAGES luci-i18n-ja"
-
 # 必备的系统工具
 PACKAGES="$PACKAGES ntpd"
 PACKAGES="$PACKAGES syslog-ng"
@@ -112,11 +106,6 @@ PACKAGES="$PACKAGES luci-app-rrdtool"
 PACKAGES="$PACKAGES vnstat"
 # 网络流量管理和 QoS
 PACKAGES="$PACKAGES luci-app-sqm"
-
-
-
-
-
 
 
 
