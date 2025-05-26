@@ -1,4 +1,4 @@
-name: build-rockchip-immortalWrt-24.10.1
+name: build-rockchip-openwrt-24.10
 
 on:
   workflow_dispatch:
