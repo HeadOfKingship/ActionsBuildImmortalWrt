@@ -35,9 +35,6 @@ PACKAGES="$PACKAGES luci-i18n-filebrowser-go-zh-cn"
 PACKAGES="$PACKAGES luci-app-argon-config"
 PACKAGES="$PACKAGES luci-i18n-argon-config-zh-cn"
 PACKAGES="$PACKAGES luci-i18n-ttyd-zh-cn"
-PACKAGES="$PACKAGES luci-i18n-passwall-zh-cn"
-PACKAGES="$PACKAGES luci-app-openclash"
-PACKAGES="$PACKAGES luci-i18n-homeproxy-zh-cn"
 PACKAGES="$PACKAGES openssh-sftp-server"
 # 增加几个必备组件 方便用户安装iStore
 PACKAGES="$PACKAGES fdisk"
@@ -50,6 +47,10 @@ PACKAGES="$PACKAGES kmod-wireguard"
 PACKAGES="$PACKAGES luci-proto-wireguard"
 PACKAGES="$PACKAGES openvpn"
 PACKAGES="$PACKAGES luci-app-openvpn"
+PACKAGES="$PACKAGES luci-i18n-passwall-zh-cn"
+PACKAGES="$PACKAGES luci-app-openclash"
+PACKAGES="$PACKAGES luci-i18n-homeproxy-zh-cn"
+
 
 # Docker 和相关的管理工具
 PACKAGES="$PACKAGES docker"
