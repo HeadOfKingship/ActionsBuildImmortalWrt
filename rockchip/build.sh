@@ -44,10 +44,10 @@ PACKAGES="$PACKAGES fdisk"
 PACKAGES="$PACKAGES script-utils"
 PACKAGES="$PACKAGES luci-i18n-samba4-zh-cn"
 
-# 需要的网络和 VPN 包（編譯會報錯先注釋掉）
-#PACKAGES="$PACKAGES wireguard-tools"
-#PACKAGES="$PACKAGES kmod-wireguard"
-#PACKAGES="$PACKAGES luci-app-wireguard"
+#网络和 VPN 包（編譯會報錯先注釋掉）
+PACKAGES="$PACKAGES wireguard-tools"
+PACKAGES="$PACKAGES kmod-wireguard"
+PACKAGES="$PACKAGES luci-app-wireguard"
 
 # Docker 和相关的管理工具
 PACKAGES="$PACKAGES docker"
