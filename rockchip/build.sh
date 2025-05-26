@@ -24,13 +24,12 @@ cat /home/build/immortalwrt/files/etc/config/pppoe-settings
 echo "$(date '+%Y-%m-%d %H:%M:%S') - Starting build process..."
 
 
-# 定义所需安装的包列表 下列插件你都可以自行删减
+
 PACKAGES=""
 PACKAGES="$PACKAGES curl"
 PACKAGES="$PACKAGES luci-i18n-diskman-zh-cn"
 PACKAGES="$PACKAGES luci-i18n-package-manager-zh-cn"
 PACKAGES="$PACKAGES luci-i18n-firewall-zh-cn"
-# 服务——FileBrowser 用户名admin 密码admin
 PACKAGES="$PACKAGES luci-i18n-filebrowser-go-zh-cn"
 PACKAGES="$PACKAGES luci-app-argon-config"
 PACKAGES="$PACKAGES luci-i18n-argon-config-zh-cn"
@@ -44,6 +43,73 @@ PACKAGES="$PACKAGES luci-i18n-dockerman-zh-cn"
 PACKAGES="$PACKAGES fdisk"
 PACKAGES="$PACKAGES script-utils"
 PACKAGES="$PACKAGES luci-i18n-samba4-zh-cn"
+
+# 需要的网络和 VPN 包
+PACKAGES="$PACKAGES wireguard-tools"
+PACKAGES="$PACKAGES kmod-wireguard"
+PACKAGES="$PACKAGES luci-app-wireguard"
+
+# Docker 和相关的管理工具
+PACKAGES="$PACKAGES docker"
+PACKAGES="$PACKAGES dockerd"
+PACKAGES="$PACKAGES luci-app-dockerman"
+
+# iptables 和 DNS 配置
+PACKAGES="$PACKAGES ipset"
+PACKAGES="$PACKAGES ip-full"
+PACKAGES="$PACKAGES iptables"
+PACKAGES="$PACKAGES iptables-mod-tproxy"
+PACKAGES="$PACKAGES iptables-mod-extra"
+PACKAGES="$PACKAGES dnsmasq-full"
+
+# 网络和内核模块支持
+PACKAGES="$PACKAGES kmod-tun"
+PACKAGES="$PACKAGES kmod-inet-diag"
+
+# Ruby 和相关的库
+PACKAGES="$PACKAGES ruby"
+PACKAGES="$PACKAGES ruby-yaml"
+
+# 必需的工具
+PACKAGES="$PACKAGES unzip"
+PACKAGES="$PACKAGES luci-compat"
+PACKAGES="$PACKAGES luci-base"
+
+# 繁体中文支持
+PACKAGES="$PACKAGES luci-i18n-zh-tw"
+
+# 日文支持
+PACKAGES="$PACKAGES luci-i18n-ja"
+
+# 必备的系统工具
+PACKAGES="$PACKAGES ntpd"
+PACKAGES="$PACKAGES syslog-ng"
+PACKAGES"$PACKAGES strace"
+PACKAGES"$PACKAGES htop"
+PACKAGES"$PACKAGES screen"
+
+# 流媒体和多媒体支持
+PACKAGES="$PACKAGES ffmpeg"
+PACKAGES="$PACKAGES minidlna"
+
+#USB
+PACKAGES="$PACKAGES kmod-usb-core"
+PACKAGES="$PACKAGES kmod-usb-ehci"
+PACKAGES="$PACKAGES kmod-usb-xhci"
+PACKAGES="$PACKAGES kmod-ath9k"   # 如果使用 Atheros 无线芯片
+PACKAGES="$PACKAGES kmod-rt2800-usb"  # 如果使用 Ralink USB 无线芯片
+PACKAGES="$PACKAGES kmod-mac80211"
+PACKAGES="$PACKAGES hostapd"
+PACKAGES="$PACKAGES wpa-supplicant"
+PACKAGES="$PACKAGES luci-app-wifi"
+
+
+
+
+
+
+
+
 
 # 构建镜像
 echo "$(date '+%Y-%m-%d %H:%M:%S') - Building image with the following packages:"
