@@ -30,6 +30,7 @@ PACKAGES="$PACKAGES curl"
 PACKAGES="$PACKAGES luci-i18n-diskman-zh-cn"
 PACKAGES="$PACKAGES luci-i18n-package-manager-zh-cn"
 PACKAGES="$PACKAGES luci-i18n-firewall-zh-cn"
+# 服务——FileBrowser 用户名admin 密码admin
 PACKAGES="$PACKAGES luci-i18n-filebrowser-go-zh-cn"
 PACKAGES="$PACKAGES luci-app-argon-config"
 PACKAGES="$PACKAGES luci-i18n-argon-config-zh-cn"
@@ -43,10 +44,10 @@ PACKAGES="$PACKAGES fdisk"
 PACKAGES="$PACKAGES script-utils"
 PACKAGES="$PACKAGES luci-i18n-samba4-zh-cn"
 
-# 需要的网络和 VPN 包
-PACKAGES="$PACKAGES wireguard-tools"
-PACKAGES="$PACKAGES kmod-wireguard"
-PACKAGES="$PACKAGES luci-app-wireguard"
+# 需要的网络和 VPN 包（編譯會報錯先注釋掉）
+#PACKAGES="$PACKAGES wireguard-tools"
+#PACKAGES="$PACKAGES kmod-wireguard"
+#PACKAGES="$PACKAGES luci-app-wireguard"
 
 # Docker 和相关的管理工具
 PACKAGES="$PACKAGES docker"
