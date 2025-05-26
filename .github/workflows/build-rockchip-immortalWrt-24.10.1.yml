@@ -126,7 +126,7 @@ jobs:
       - name: Upload ImmortWrt as release assets
         uses: softprops/action-gh-release@v2.2.1
         with:
-          tag_name: ImmortWrt-Rockchip
+          tag_name: Autobuild
           name: ImmortWrt-Rockchip
           body_path: ${{ github.workspace }}/info.md
           files: |
