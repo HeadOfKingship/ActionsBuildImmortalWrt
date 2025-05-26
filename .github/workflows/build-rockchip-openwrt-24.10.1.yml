@@ -106,7 +106,7 @@ jobs:
               --user root \
               -v "${{ github.workspace }}/bin:/home/build/openwrt/bin" \
               -v "${{ github.workspace }}/files:/home/build/openwrt/files" \
-              -v "${{ github.workspace }}/rockchip/imm.config:/home/build/openwrt/.config" \
+              -v "${{ github.workspace }}/rockchip/openwrt/open.config:/home/build/openwrt/.config" \
               -v "${{ github.workspace }}/rockchip/openwrt/build.sh:/home/build/openwrt/build.sh" \
               -e PROFILE=$profile \
               -e ROOTFS_PARTSIZE=$rootfs_partsize \
