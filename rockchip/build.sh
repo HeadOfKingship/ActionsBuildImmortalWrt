@@ -25,6 +25,7 @@ echo "$(date '+%Y-%m-%d %H:%M:%S') - Starting build process..."
 
 
 
+# 定义所需安装的包列表
 PACKAGES=""
 PACKAGES="$PACKAGES curl"
 PACKAGES="$PACKAGES luci-i18n-diskman-zh-cn"
@@ -85,9 +86,9 @@ PACKAGES="$PACKAGES luci-i18n-ja"
 # 必备的系统工具
 PACKAGES="$PACKAGES ntpd"
 PACKAGES="$PACKAGES syslog-ng"
-PACKAGES"$PACKAGES strace"
-PACKAGES"$PACKAGES htop"
-PACKAGES"$PACKAGES screen"
+PACKAGES"=$PACKAGES strace"
+PACKAGES"=$PACKAGES htop"
+PACKAGES"=$PACKAGES screen"
 
 # 流媒体和多媒体支持
 PACKAGES="$PACKAGES ffmpeg"
@@ -105,10 +106,13 @@ PACKAGES="$PACKAGES wpa-supplicant"
 PACKAGES="$PACKAGES luci-app-wifi"
 
 #流量監控
-PACKAGES="$PACKAGES luci-app-nlbwmon"    # 网络负载带宽监控
-PACKAGES="$PACKAGES luci-app-rrdtool"    # 基于 rrdtool 的流量图表显示
-PACKAGES="$PACKAGES vnstat"              # vnStat 流量统计工具
-PACKAGES="$PACKAGES luci-app-sqm"        # 网络流量管理和 QoS
+PACKAGES="$PACKAGES luci-app-nlbwmon"
+# 基于 rrdtool 的流量图表显示
+PACKAGES="$PACKAGES luci-app-rrdtool"
+# vnStat 流量统计工具
+PACKAGES="$PACKAGES vnstat"
+# 网络流量管理和 QoS
+PACKAGES="$PACKAGES luci-app-sqm"
 
 
 
