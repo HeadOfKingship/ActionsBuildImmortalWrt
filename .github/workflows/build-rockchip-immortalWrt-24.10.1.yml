@@ -76,6 +76,9 @@ jobs:
   build:
     runs-on: ubuntu-22.04
 
+    env:
+      ACTIONS_STEP_DEBUG: true
+
     steps:
       - name: Checkout code
         uses: actions/checkout@v3
