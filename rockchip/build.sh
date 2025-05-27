@@ -106,6 +106,7 @@ PACKAGES="$PACKAGES vnstat"
 # 网络流量管理和 QoS
 PACKAGES="$PACKAGES luci-app-sqm"
 #luci-app-statistics
+#進系統後裝一下opkg install collectd-mod-ethstat collectd-mod-ipstatistics collectd-mod-irq collectd-mod-load collectd-mod-ping collectd-mod-powerdns collectd-mod-sqm collectd-mod-thermal collectd-mod-wireless
 PACKAGES="$PACKAGES luci-app-statistics"
 
 
