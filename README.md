@@ -1,4 +1,4 @@
-# AutoBuildopenwrtWrt
+# AutoBuildimmortaWrt
 ## 这是什么？
 它是一个工作流。可快速构建 带docker且支持自定义固件大小的 immortalWrt
 > 1、支持自定义固件大小 默认1GB <br>
