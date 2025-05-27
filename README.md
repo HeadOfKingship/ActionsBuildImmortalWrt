@@ -36,3 +36,4 @@ https://downloads.immortalwrt.org/releases/23.05.4/packages/x86_64/luci/
 
 # immortalwrt
 ### https://github.com/immortalwrt
+#源自@wukongdaily/AutoBuildImmortalWrt修改
