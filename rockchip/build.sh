@@ -41,7 +41,7 @@ PACKAGES="$PACKAGES fdisk"
 PACKAGES="$PACKAGES script-utils"
 PACKAGES="$PACKAGES luci-i18n-samba4-zh-cn"
 
-#网络和 VPN 包（編譯會報錯先注釋掉）
+#网络和 VPN 包
 PACKAGES="$PACKAGES wireguard-tools"
 PACKAGES="$PACKAGES kmod-wireguard"
 PACKAGES="$PACKAGES luci-proto-wireguard"
@@ -105,6 +105,8 @@ PACKAGES="$PACKAGES luci-app-nlbwmon"
 PACKAGES="$PACKAGES vnstat"
 # 网络流量管理和 QoS
 PACKAGES="$PACKAGES luci-app-sqm"
+#luci-app-statistics
+PACKAGES="$PACKAGES luci-app-statistics"
 
 
 
