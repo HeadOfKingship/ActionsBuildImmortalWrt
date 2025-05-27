@@ -65,10 +65,11 @@ PACKAGES="$PACKAGES kmod-inet-diag"
 # Ruby 和相关的库
 PACKAGES="$PACKAGES ruby"
 PACKAGES="$PACKAGES ruby-yaml"
-# 必需的工具
+# 工具
 PACKAGES="$PACKAGES unzip"
 PACKAGES="$PACKAGES luci-compat"
 PACKAGES="$PACKAGES luci-base"
+PACKAGES="$PACKAGES nano"
 # 必备的系统工具
 PACKAGES="$PACKAGES ntpd"
 PACKAGES="$PACKAGES syslog-ng"
