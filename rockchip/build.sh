@@ -100,8 +100,8 @@ PACKAGES="$PACKAGES wpa-supplicant"
 #流量監控
 PACKAGES="$PACKAGES luci-app-nlbwmon"
 # vnStat 流量统计工具
-# PACKAGES="$PACKAGES vnstat2"
-# PACKAGES="$PACKAGES luci-app-vnstat2"
+PACKAGES="$PACKAGES vnstat2"
+PACKAGES="$PACKAGES luci-app-vnstat2"
 
 
 # 网络流量管理和 QoS
