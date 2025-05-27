@@ -30,11 +30,8 @@ PACKAGES="$PACKAGES curl"
 PACKAGES="$PACKAGES luci-i18n-diskman-zh-cn"
 PACKAGES="$PACKAGES luci-i18n-package-manager-zh-cn"
 PACKAGES="$PACKAGES luci-i18n-firewall-zh-cn"
-PACKAGES="$PACKAGES util-linux-mkswap"
-PACKAGES="$PACKAGES util-linux-swapon"
-PACKAGES="$PACKAGES util-linux-swapoff"
-PACKAGES="$PACKAGES util-linux-uuidgen"
-PACKAGES="$PACKAGES util-linux-blkid=y"
+PACKAGES="$PACKAGES util-linux-full=y"
+
 
 # 服务——FileBrowser 用户名admin 密码admin
 PACKAGES="$PACKAGES luci-i18n-filebrowser-go-zh-cn"
