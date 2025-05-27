@@ -1,7 +1,7 @@
 # GithubActionsBuildimmortaWrt
 ## 这是什么？
 它是一个工作流。可快速构建 带docker且支持自定义固件大小的 immortalWrt
-> 支持自定义固件大小 默认1GB <br>
+> 支持自定义固件大小 默认 <br>
 > 支持预安装docker（可选）<br>
 > 支持x86-64 和 rockchip ）<br>
 > 支持MT3000/MT2500/MT6000/B2200（docker可选）<br>
