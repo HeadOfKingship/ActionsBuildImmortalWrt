@@ -126,15 +126,20 @@ jobs:
             sha256sum -c "$file.sha256"
           done
 
-      - name: Upload ImmortWrt as release assets
-        uses: softprops/action-gh-release@v2.2.1
+
+      - name: Upload ImmortWrt as release assets (with retry)
+        uses: Wandalen/wretry.action@v1.0.36
         with:
+          action: softprops/action-gh-release@v2.2.1
+          attempt_limit: 3
+          attempt_delay: 10000
           tag_name: Autobuild
           name: ImmortWrt-Rockchip
           body_path: ${{ github.workspace }}/info.md
           files: |
             ${{ github.workspace }}/*.img.gz
             ${{ github.workspace }}/*.sha256
-          token: ${{ secrets.GITHUB_TOKEN }}
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+
