@@ -46,7 +46,7 @@ PACKAGES="$PACKAGES kmod-wireguard"
 PACKAGES="$PACKAGES luci-proto-wireguard"
 # PACKAGES="$PACKAGES openvpn"
 # PACKAGES="$PACKAGES luci-app-openvpn"
-# PACKAGES="$PACKAGES luci-i18n-passwall-zh-cn"
+PACKAGES="$PACKAGES luci-i18n-passwall-zh-cn"
 PACKAGES="$PACKAGES luci-app-openclash"
 # Docker 和相关的管理工具
 PACKAGES="$PACKAGES docker"
