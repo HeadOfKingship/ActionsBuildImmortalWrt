@@ -40,7 +40,6 @@ PACKAGES="$PACKAGES openssh-sftp-server"
 PACKAGES="$PACKAGES fdisk"
 PACKAGES="$PACKAGES script-utils"
 PACKAGES="$PACKAGES luci-i18n-samba4-zh-cn"
-
 # 网络和 VPN 包
 PACKAGES="$PACKAGES wireguard-tools"
 PACKAGES="$PACKAGES kmod-wireguard"
@@ -49,45 +48,36 @@ PACKAGES="$PACKAGES luci-proto-wireguard"
 # PACKAGES="$PACKAGES luci-app-openvpn"
 PACKAGES="$PACKAGES luci-i18n-passwall-zh-cn"
 PACKAGES="$PACKAGES luci-app-openclash"
-
 # Docker 和相关的管理工具
 PACKAGES="$PACKAGES docker"
 PACKAGES="$PACKAGES dockerd"
 PACKAGES="$PACKAGES luci-app-dockerman"
 PACKAGES="$PACKAGES luci-i18n-dockerman-zh-cn"
-
-
 # iptables 和 DNS 配置
 PACKAGES="$PACKAGES ipset"
 PACKAGES="$PACKAGES ip-full"
 PACKAGES="$PACKAGES iptables-mod-tproxy"
 PACKAGES="$PACKAGES iptables-mod-extra"
 PACKAGES="$PACKAGES dnsmasq-full"
-
 # 网络和内核模块支持
 PACKAGES="$PACKAGES kmod-tun"
 PACKAGES="$PACKAGES kmod-inet-diag"
-
 # Ruby 和相关的库
 PACKAGES="$PACKAGES ruby"
 PACKAGES="$PACKAGES ruby-yaml"
-
 # 必需的工具
 PACKAGES="$PACKAGES unzip"
 PACKAGES="$PACKAGES luci-compat"
 PACKAGES="$PACKAGES luci-base"
-
 # 必备的系统工具
 PACKAGES="$PACKAGES ntpd"
 PACKAGES="$PACKAGES syslog-ng"
 PACKAGES="$PACKAGES strace"
 PACKAGES="$PACKAGES htop"
 PACKAGES="$PACKAGES screen"
-
 # 流媒体和多媒体支持
 PACKAGES="$PACKAGES ffmpeg"
 PACKAGES="$PACKAGES minidlna"
-
 #USB
 PACKAGES="$PACKAGES kmod-usb-core"
 PACKAGES="$PACKAGES kmod-usb-ehci"
@@ -96,19 +86,20 @@ PACKAGES="$PACKAGES kmod-rt2800-usb"  # 如果使用 Ralink USB 无线芯片
 PACKAGES="$PACKAGES kmod-mac80211"
 PACKAGES="$PACKAGES hostapd"
 PACKAGES="$PACKAGES wpa-supplicant"
-
 #流量監控
 PACKAGES="$PACKAGES luci-app-nlbwmon"
 # vnStat 流量统计工具
 PACKAGES="$PACKAGES vnstat2"
 PACKAGES="$PACKAGES luci-app-vnstat2"
-
-
 # 网络流量管理和 QoS
 PACKAGES="$PACKAGES luci-app-sqm"
 #luci-app-statistics
 # 進系統後裝一下opkg install collectd-mod-ethstat collectd-mod-ipstatistics collectd-mod-irq collectd-mod-load collectd-mod-ping collectd-mod-powerdns collectd-mod-sqm collectd-mod-thermal collectd-mod-wireless
 PACKAGES="$PACKAGES luci-app-statistics"
+#多語言
+PACKAGES="$PACKAGES luci-i18n-base-zh-cn"
+PACKAGES="$PACKAGES luci-i18n-base-zh-tw"
+PACKAGES="$PACKAGES luci-i18n-base-ja"
 
 
 
