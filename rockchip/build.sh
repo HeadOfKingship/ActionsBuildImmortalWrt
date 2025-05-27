@@ -41,7 +41,7 @@ PACKAGES="$PACKAGES fdisk"
 PACKAGES="$PACKAGES script-utils"
 PACKAGES="$PACKAGES luci-i18n-samba4-zh-cn"
 
-#网络和 VPN 包
+# 网络和 VPN 包
 PACKAGES="$PACKAGES wireguard-tools"
 PACKAGES="$PACKAGES kmod-wireguard"
 PACKAGES="$PACKAGES luci-proto-wireguard"
@@ -106,7 +106,7 @@ PACKAGES="$PACKAGES vnstat"
 # 网络流量管理和 QoS
 PACKAGES="$PACKAGES luci-app-sqm"
 #luci-app-statistics
-#進系統後裝一下opkg install collectd-mod-ethstat collectd-mod-ipstatistics collectd-mod-irq collectd-mod-load collectd-mod-ping collectd-mod-powerdns collectd-mod-sqm collectd-mod-thermal collectd-mod-wireless
+# 進系統後裝一下opkg install collectd-mod-ethstat collectd-mod-ipstatistics collectd-mod-irq collectd-mod-load collectd-mod-ping collectd-mod-powerdns collectd-mod-sqm collectd-mod-thermal collectd-mod-wireless
 PACKAGES="$PACKAGES luci-app-statistics"
 
 
@@ -118,10 +118,10 @@ PACKAGES="$PACKAGES luci-app-statistics"
 echo "$(date '+%Y-%m-%d %H:%M:%S') - Building image with the following packages:"
 echo "$PACKAGES"
 
-#immortalwrt
+# immortalwrt
 make image PROFILE=$PROFILE PACKAGES="$PACKAGES" FILES="/home/build/immortalwrt/files" ROOTFS_PARTSIZE=$ROOTFS_PARTSIZE
-#openwrt
-#make image PROFILE=$PROFILE PACKAGES="$PACKAGES" FILES="/home/build/openwrt/files" ROOTFS_PARTSIZE=$ROOTFS_PARTSIZE
+# openwrt
+# make image PROFILE=$PROFILE PACKAGES="$PACKAGES" FILES="/home/build/openwrt/files" ROOTFS_PARTSIZE=$ROOTFS_PARTSIZE
 
 
 if [ $? -ne 0 ]; then
